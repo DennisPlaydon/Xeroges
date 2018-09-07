@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meshd", "Meshd\Meshd.csproj", "{5BB9E0E0-26C9-4677-B9D1-D41F915B6074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meshd", "Meshd\Meshd.csproj", "{5BB9E0E0-26C9-4677-B9D1-D41F915B6074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeshdApp", "MeshdApp\MeshdApp.csproj", "{792DB434-5E87-4EAD-A7A8-592E643C1890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeshdAPI", "MeshdAPI\MeshdAPI.csproj", "{DFA4D090-8748-472B-8430-912C6357F2CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5BB9E0E0-26C9-4677-B9D1-D41F915B6074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BB9E0E0-26C9-4677-B9D1-D41F915B6074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BB9E0E0-26C9-4677-B9D1-D41F915B6074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792DB434-5E87-4EAD-A7A8-592E643C1890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792DB434-5E87-4EAD-A7A8-592E643C1890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792DB434-5E87-4EAD-A7A8-592E643C1890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792DB434-5E87-4EAD-A7A8-592E643C1890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA4D090-8748-472B-8430-912C6357F2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA4D090-8748-472B-8430-912C6357F2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA4D090-8748-472B-8430-912C6357F2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA4D090-8748-472B-8430-912C6357F2CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

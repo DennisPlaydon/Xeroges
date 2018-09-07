@@ -1,0 +1,11 @@
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\bin\Debug\netcoreapp2.0\MeshdApp.deps.json
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\bin\Debug\netcoreapp2.0\MeshdApp.runtimeconfig.json
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\bin\Debug\netcoreapp2.0\MeshdApp.runtimeconfig.dev.json
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\bin\Debug\netcoreapp2.0\MeshdApp.dll
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\bin\Debug\netcoreapp2.0\MeshdApp.pdb
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.csprojResolveAssemblyReference.cache
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.csproj.CoreCompileInputs.cache
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.AssemblyInfoInputs.cache
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.AssemblyInfo.cs
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.dll
+C:\Dev\Personal\Meshd\Meshd\MeshdApp\obj\Debug\netcoreapp2.0\MeshdApp.pdb

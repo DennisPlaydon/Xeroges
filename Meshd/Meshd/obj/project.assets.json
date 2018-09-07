@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Personal\\core\\Meshd\\Meshd\\Meshd.csproj",
+      "projectUniqueName": "C:\\Dev\\Personal\\Meshd\\Meshd\\Meshd\\Meshd.csproj",
       "projectName": "Meshd",
-      "projectPath": "C:\\Dev\\Personal\\core\\Meshd\\Meshd\\Meshd.csproj",
+      "projectPath": "C:\\Dev\\Personal\\Meshd\\Meshd\\Meshd\\Meshd.csproj",
       "packagesPath": "C:\\Users\\josh.jacobsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Personal\\core\\Meshd\\Meshd\\obj\\",
+      "outputPath": "C:\\Dev\\Personal\\Meshd\\Meshd\\Meshd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
