@@ -43,6 +43,12 @@ namespace MeshdAPI
             }
 
             app.UseMvc();
+
+            // Serve the files Default.htm, default.html, Index.htm, Index.html
+            // by default (in this order)
+            app.UseDefaultFiles();
+            // Serves all static files in wwwroot
+            app.UseStaticFiles();
         }
     }
 
