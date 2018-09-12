@@ -12,4 +12,15 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\beach.jpg" />
+  </ItemGroup>
 </Project>
