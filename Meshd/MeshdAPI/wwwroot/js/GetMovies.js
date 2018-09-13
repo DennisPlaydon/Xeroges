@@ -41,3 +41,19 @@
 
 request.send();
 }
+
+function SayHi() {
+    const request = new XMLHttpRequest();
+    const url = 'http://localhost:61946/api/values/5';
+    request.open("GET", url, true);
+    //request.onload = function() {
+    //    var data = JSON.parse(this.response);
+    //    console.log(data);
+    //}
+
+    request.send();
+    request.onreadystatechange = (e) => {
+        const data = request.responseText;
+        console.log(data);
+    }
+}
