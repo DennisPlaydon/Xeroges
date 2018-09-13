@@ -43,8 +43,14 @@ request.send();
 }
 
 function SayHi() {
+    const valuesTarget = document.getElementById('values');
+    const container = document.createElement('div');
+    container.setAttribute('class', 'container');
+
+    valuesTarget.appendChild(container);
+
     const request = new XMLHttpRequest();
-    const url = 'http://localhost:61946/api/values/5';
+    const url = 'http://localhost:61947/api/values';
     request.open("GET", url, true);
     //request.onload = function() {
     //    var data = JSON.parse(this.response);
@@ -53,7 +59,25 @@ function SayHi() {
 
     request.send();
     request.onreadystatechange = (e) => {
+
         const data = request.responseText;
+        data.forEach(element => {
+            console.log(element);
+            
+        });
         console.log(data);
+
+        const card = document.createElement('div');
+
+        const p = document.createElement('p');
+        p.textContent = `${data}`;
+
+        container.appendChild(card);
+        card.appendChild(p);
+
+
+
+
+
     }
 }

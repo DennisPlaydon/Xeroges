@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace MeshdAPI.Controllers
@@ -10,7 +11,11 @@ namespace MeshdAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            Random rnd = new Random();
+            int number1 = rnd.Next(100);
+            int number2 = rnd.Next(100);
+
+            return new string[] { number1.ToString(), number2.ToString() };
         }
 
         // GET api/values/5
