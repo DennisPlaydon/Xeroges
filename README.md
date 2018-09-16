@@ -123,3 +123,71 @@ namespace <application name>.Controllers
 7. Run `dotnet run`
 8. Navigate to `localhost:5000/api/values` and you should see `Hello from the controller`
 
+#### Serve static files 
+1. Create a `wwwroot` folder in the root directory 
+2. Create an `index.html` file with the following snippet:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Welcome to the index file</h1>
+</body>
+</html>
+```
+3. Add the following snippet to `Startup.cs` to tell the app to serve static files:
+```
+// Serve the files Default.htm, default.html, Index.htm, Index.html
+// by default (in this order)
+app.UseDefaultFiles();
+// Serves all static files in wwwroot
+app.UseStaticFiles();
+```
+4. At this point you can remove the `app.Run` block:
+```
+app.Run(async (context) =>
+{
+    await context.Response.WriteAsync("Hello World!");
+});
+```
+
+#### Watching files for changes 
+It's a pain to make changes, stop the app, then rerun `dotnet run`. Stop the app and run `dotnet watch run`. Head to `Program.cs` and remove `Console.WriteLine("Hello World!");`. The app should rebuild and rerun. 
+
+#### Adding Javascript 
+1. Create a `js` folder in `wwwroot`
+2. Create an `index.js` file and paste in the following code:
+```
+let count = 0;
+
+function callController() {
+    const root = document.getElementById('root');
+
+    const request = new XMLHttpRequest();
+    request.open("GET", 'http://localhost:5000/api/values');
+    request.send();
+    request.onreadystatechange = (e) => {
+        if (request.readyState == 4 && request.status == 200){
+            if (request.responseText) {
+                count++;
+
+                const data = request.responseText;
+
+                root.innerHTML = "";
+
+                const container = document.createElement('div');
+                root.appendChild(container);
+                const p = document.createElement('p');
+                p.textContent = `${data} called ${count} times`
+                container.appendChild(p);
+            }
+        }
+    }
+}
+```
+3. In the `index.html` file, add in a a target div for the js to attach to: `<div id="root"></div>`
+4. Add a button to call the js function: `<button type="button" onclick="callController();">Click to get values</button>`
+5. Add the script to the page: `<script src="./js/index.js"></script>`
